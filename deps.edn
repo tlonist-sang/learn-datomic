@@ -1,0 +1,14 @@
+{:paths     ["src"]
+ :deps      {org.clojure/clojure    {:mvn/version "1.10.3"}
+             ring/ring              {:mvn/version "1.9.4"}
+             com.datomic/client-pro {:mvn/version "0.9.63"}
+             compojure/compojure    {:mvn/version "1.6.2"}
+             hiccup/hiccup          {:mvn/version "1.0.5"}}
+ :aliases
+ {:dev
+  {:extra-paths ["dev"]
+   :extra-deps  {com.datomic/dev-local {:mvn/version "0.9.232"}
+                 ring/ring-mock        {:mvn/version "0.4.0"}
+                 integrant/repl        {:mvn/version "0.3.2"}}}}
+ :mvn/repos {"cognitect-dev-tools"
+             {:url "https://dev-tools.cognitect.com/maven/releases/"}}}
