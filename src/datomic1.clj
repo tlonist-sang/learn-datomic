@@ -60,7 +60,7 @@
           [{:inv/color [:db/ident]}
            {:inv/size [:db/ident]}
            {:inv/type [:db/ident]}]
-          [:inv/sku "SKU-42"])
+          [:inv/sku "SKU-46"])
 
   (d/q '[:find ?sku
          :where
